@@ -7,7 +7,7 @@ from playwright.async_api import async_playwright
 HERE=Path(__file__).resolve().parent
 OUT=HERE/"docs/kurs.json"
 NAME="Kristoffer Sandal"
-URLS=["https://www.proffkurs.no/produkt/fse/","https://www.proffkurs.no/fse-kurs-for-instruert-personell/"]
+URLS=["https://www.proffkurs.no/fse-kurs-for-elektropersonell/","https://www.proffkurs.no/fse-kurs-for-instruert-personell/","https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/"]
 MONTHS={"jan":1,"januar":1,"feb":2,"februar":2,"mar":3,"mars":3,"apr":4,"april":4,"mai":5,"jun":6,"juni":6,"jul":7,"juli":7,"aug":8,"august":8,"sep":9,"sept":9,"september":9,"okt":10,"oktober":10,"nov":11,"november":11,"des":12,"desember":12}
 DATERE=re.compile(r"(\d{1,2})\s*\.?\s*("+ "|".join(sorted(MONTHS,key=len,reverse=True))+r")\s*[,]?\s*(20\d\d)",re.I)
 TIME=re.compile(r"\b([01]?\d|2[0-3])[:.]([0-5]\d)\b")
@@ -36,7 +36,7 @@ JS="""() => {
  const visible=e=>{let r=e.getBoundingClientRect();let s=getComputedStyle(e);return r.width>140&&r.height>100&&s.visibility!=='hidden'};
  let nodes=[...document.querySelectorAll('[role=dialog],[aria-modal=true],.el-dialog,.am-dialog,[class*=modal],[class*=Modal],[class*=popup]')].filter(e=>visible(e)&&/Info om kurset/.test(e.innerText||'')&&/Bestill kurs/.test(e.innerText||'')&&(e.innerText||'').length<16000);
  if(!nodes.length){for(let e of document.querySelectorAll('h1,h2,h3,h4,span,div')){if(e.children.length||e.textContent.trim()!=='Info om kurset')continue;for(let p=e.parentElement,n=0;p&&n<8;p=p.parentElement,n++){let t=p.innerText||'';if(visible(p)&&t.includes('Bestill kurs')&&t.length<16000){nodes.push(p);break}}}}
- nodes.sort((a,b)=>a.innerText.length-b.innerText.length);
+ nodes.sort((a,b)=>{const x=a.innerText||'', y=b.innerText||''; const score=t=>(t.includes("Kristoffer Sandal")?100000:0)+(t.includes("Tidsrom")?10000:0)+Math.min(t.length,14000);return score(y)-score(x)});
  return nodes[0]?.innerText||null;
 }"""
 async def main():
@@ -64,15 +64,28 @@ async def main():
        for j in range(count):
         try:
          await locator.nth(j).click(timeout=6500)
-         await page.wait_for_timeout(1800)
+         await page.wait_for_timeout(2100)
          detail=await frame.evaluate(JS)
+         if not detail or NAME.casefold() not in detail.casefold():
+          # In some booking interfaces the instructor card loads only when scrolling the popup.
+          try:
+           await frame.evaluate("""() => {
+            const nodes=[...document.querySelectorAll('[role=dialog],[aria-modal=true],.el-dialog,[class*=modal],[class*=Modal],[class*=popup]')];
+            nodes.filter(e => (e.innerText||'').includes('Info om kurset')).forEach(e => {
+             e.scrollTop=e.scrollHeight;
+             for(const c of e.querySelectorAll('*')) if(c.scrollHeight>c.clientHeight+100) c.scrollTop=c.scrollHeight;
+            });
+           }""")
+           await page.wait_for_timeout(1200)
+           detail=await frame.evaluate(JS)
+          except Exception as ex:print("Scroll diagnostic",str(ex)[:100])
          if not detail and frame != page.main_frame:detail=await page.evaluate(JS)
          if detail:
           opened+=1
           event=parse(detail,url)
           if event:found[event["id"]]=event;print("MATCH",event["dato"],event["tid"],event["navn"])
           else:
-           print("NO_MATCH", "frame",frame.url[:100],"len",len(detail),"name",NAME.lower() in detail.lower(),"date",bool(DATERE.search(detail)),"first300",repr(detail[:300]),"last400",repr(detail[-400:]))
+           print("NO_MATCH", "frame",frame.url[:100],"len",len(detail),"name",NAME.lower() in detail.lower(),"date",bool(DATERE.search(detail)),"header",("Info om kurset" in detail),"book",("Bestill kurs" in detail),"address",bool(ADDRESS.search(detail)),"time",bool(TIME.search(detail)),"first300",repr(detail[:300]),"last400",repr(detail[-400:]))
          await page.keyboard.press("Escape")
          await page.wait_for_timeout(250)
          # If escape doesn't dismiss, use common close buttons.
@@ -94,7 +107,9 @@ async def main():
  if not opened:
   print("ERROR: No course dialogs read; preserving previous JSON");return 2
  if not found:
-  print("ERROR: No instructor matches; preserving previous JSON until checked");return 3
+  print("ERROR: No instructor matches; preserving previous JSON until checked")
+  print("TIP: Check the NO_MATCH diagnostics above. Page dates alone are never accepted.")
+  return 3
  data={"updated_at":dt.datetime.now(ZoneInfo("Europe/Oslo")).isoformat(timespec="seconds"),"source":"proffkurs.no","filter":"instruktør per kursdato","events":sorted(found.values(),key=lambda e:(e["dato"],e["tid"]))}
  OUT.parent.mkdir(parents=True,exist_ok=True)
  OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
