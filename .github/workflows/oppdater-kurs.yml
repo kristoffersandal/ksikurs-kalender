@@ -3,6 +3,10 @@ on:
   schedule:
     - cron: '23 7 * * 1'
   workflow_dispatch:
+  push:
+    paths:
+      - 'skanner.py'
+      - '.github/workflows/oppdater-kurs.yml'
 permissions:
   contents: write
   pages: write
@@ -33,6 +37,7 @@ jobs:
             git push
           fi
   publish:
+    if: ${{ always() }}
     needs: scan
     runs-on: ubuntu-latest
     environment:
