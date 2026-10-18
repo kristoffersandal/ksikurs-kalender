@@ -1,8 +1,17 @@
 {
-  "updated_at": "2026-10-18T21:43:07+02:00",
+  "updated_at": "2026-10-18T21:46:19+02:00",
   "source": "proffkurs.no",
   "filter": "instruktør per kursdato",
   "events": [
+    {
+      "id": "2026-10-22-1200-fse-lavspenning-og-f-rstehjelp",
+      "dato": "2026-10-22",
+      "tid": "12:00",
+      "navn": "FSE for elektropersonell – lavspenning (med praktisk førstehjelp)",
+      "adresse": "Alf Bjerckes vei 20, 0582 Oslo",
+      "kurs": "FSE lavspenning og førstehjelp",
+      "lenke": "https://www.proffkurs.no/produkt/fse/"
+    },
     {
       "id": "2026-10-22-1200-instruert-personell---ba4",
       "dato": "2026-10-22",
@@ -20,6 +29,15 @@
       "adresse": "Alf Bjerckes vei 20, 0582 Oslo",
       "kurs": "Praktisk førstehjelp",
       "lenke": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/"
+    },
+    {
+      "id": "2026-12-03-1200-fse-lavspenning-og-f-rstehjelp",
+      "dato": "2026-12-03",
+      "tid": "12:00",
+      "navn": "FSE for elektropersonell – lavspenning (med praktisk førstehjelp)",
+      "adresse": "Alf Bjerckes vei 20, 0582 Oslo",
+      "kurs": "FSE lavspenning og førstehjelp",
+      "lenke": "https://www.proffkurs.no/produkt/fse/"
     },
     {
       "id": "2026-12-03-1200-instruert-personell---ba4",
