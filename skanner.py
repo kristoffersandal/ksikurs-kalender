@@ -61,6 +61,12 @@ async def main():
     sample=(HERE/"tests/modal_example.txt").read_text()
     assert parse(sample,URLS[0],dt.date(2026,10,1))
     assert parse(sample.replace(NAME,"Niklas Sæthre"),URLS[0],dt.date(2026,10,1)) is None
+    live=(HERE/"tests/modal_live_example.txt").read_text()
+    test_event=parse(live,URLS[1],dt.date(2026,10,1))
+    assert test_event is not None, "The public booking dialog format was not recognized"
+    assert test_event["dato"]=="2026-12-03" and test_event["tid"]=="12:00"
+    assert test_event["kurs"]=="Instruert personell / BA4"
+    assert parse(live.replace(NAME,"Niklas Sæthre"),URLS[1],dt.date(2026,10,1)) is None
     print("Filtertest OK");return 0
  found={};opened=0;diagnostics=[]
  async with async_playwright() as p:
