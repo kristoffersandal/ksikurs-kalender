@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-10-18T21:37:00+02:00",
+  "checked_at": "2026-10-18T21:43:07+02:00",
   "opened": 8,
-  "confirmed": 0,
+  "confirmed": 4,
   "entries": [
     {
-      "page": "https://www.proffkurs.no/fse-kurs-for-elektropersonell/",
+      "page": "https://www.proffkurs.no/produkt/fse/",
       "status": 200,
       "frames": 1
     },
     {
-      "frame": "https://www.proffkurs.no/fse-kurs-for-elektropersonell/",
+      "frame": "https://www.proffkurs.no/produkt/fse/",
       "buttons": 0
     },
     {
@@ -25,53 +25,53 @@
       "page": "https://www.proffkurs.no/fse-kurs-for-instruert-personell/",
       "frame": "https://www.proffkurs.no/fse-kurs-for-instruert-personell/",
       "button_index": 0,
-      "length": 8633,
+      "length": 671,
       "has_name": true,
       "has_date": true,
       "has_address": true,
       "has_info": true,
       "has_book": true,
-      "preview_top": "Administrer samtykke\n\nVi bruker informasjonskapsler til to ting: å forstå hvordan nettsiden brukes (Google Analytics og Microsoft Clarity) og å måle om annonsene våre virker. Det hjelper oss å gjøre siden bedre. Du kan godta alle, avslå, eller velge selv. Les mer i personvernerklæringen.\n\nGodta\nAvslå\nVis preferanser\nCookie Policy\nPersonvernerklæring\nKontakt oss\nHopp til navigasjon\nHopp til innhold\nHjem\n \nKursoversikt\nAlle kurs\nKurs for bygg og anlegg\nKurs for elektro og energi\nKurs for telekom og fiber\nKurs for industri og lager\nKurs for kommune og offentlig sektor\nKurs for kontor og administrasjon\nKurs for renhold og eiendomsdrift\nKurs for helse og omsorg\n \nRessurser\nFinn riktig kurs\nArtikler\nOfte stilte spørsmål (FAQ)\nTruckførerkurs\nVerneombudskurs\nVerneombudskurs på nett\n \nOm oss\nOm oss\nKurslokaler\nKontakt oss\n \nMin side\nKursdeltaker\nInstruktør\nKursbestiller\n \nSE KURSUTVALGET\nHjem/Ele",
-      "preview_bottom": "s.no\nNordre Fokserød 13B, 3241 Sandefjord\nAvdeling Østfold\n+47 97 51 93 43\npost@proffkurs.no\nØsthølen 20B, 1734 Hafslundsøy\n NO \nBooking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n12:00\n\nFSE for instruert personell (BA4)\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 900,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 12:00 - 16:00\n\nMer informasjon\n\nInngangsparti: Døren er på langsiden av bygget (oransje dør), i Alf Bjerckes vei 20. Hvis døren ikke er åpen, kan du ringe ...\n\nVis mer\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
+      "preview_top": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n12:00\n\nFSE for instruert personell (BA4)\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 900,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 12:00 - 16:00\n\nMer informasjon\n\nInngangsparti: Døren er på langsiden av bygget (oransje dør), i Alf Bjerckes vei 20. Hvis døren ikke er åpen, kan du ringe ...\n\nVis mer\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs",
+      "preview_bottom": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n12:00\n\nFSE for instruert personell (BA4)\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 900,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 12:00 - 16:00\n\nMer informasjon\n\nInngangsparti: Døren er på langsiden av bygget (oransje dør), i Alf Bjerckes vei 20. Hvis døren ikke er åpen, kan du ringe ...\n\nVis mer\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
     },
     {
       "page": "https://www.proffkurs.no/fse-kurs-for-instruert-personell/",
       "frame": "https://www.proffkurs.no/fse-kurs-for-instruert-personell/",
       "button_index": 1,
-      "length": 8481,
+      "length": 521,
       "has_name": true,
       "has_date": true,
       "has_address": true,
       "has_info": true,
       "has_book": true,
-      "preview_top": "Administrer samtykke\n\nVi bruker informasjonskapsler til to ting: å forstå hvordan nettsiden brukes (Google Analytics og Microsoft Clarity) og å måle om annonsene våre virker. Det hjelper oss å gjøre siden bedre. Du kan godta alle, avslå, eller velge selv. Les mer i personvernerklæringen.\n\nGodta\nAvslå\nVis preferanser\nCookie Policy\nPersonvernerklæring\nKontakt oss\nHopp til navigasjon\nHopp til innhold\nHjem\n \nKursoversikt\nAlle kurs\nKurs for bygg og anlegg\nKurs for elektro og energi\nKurs for telekom og fiber\nKurs for industri og lager\nKurs for kommune og offentlig sektor\nKurs for kontor og administrasjon\nKurs for renhold og eiendomsdrift\nKurs for helse og omsorg\n \nRessurser\nFinn riktig kurs\nArtikler\nOfte stilte spørsmål (FAQ)\nTruckførerkurs\nVerneombudskurs\nVerneombudskurs på nett\n \nOm oss\nOm oss\nKurslokaler\nKontakt oss\n \nMin side\nKursdeltaker\nInstruktør\nKursbestiller\nSE KURSUTVALGET\nHjem/Elekt",
-      "preview_bottom": "ørlandet\n+47 97 51 93 43\npost@proffkurs.no\nSilurveien 9, 4636 Kristiansand (i samarbeid med Marin HMS)\nAvdeling Vestfold\n+47 97 51 93 43\npost@proffkurs.no\nNordre Fokserød 13B, 3241 Sandefjord\nAvdeling Østfold\n+47 97 51 93 43\npost@proffkurs.no\nØsthølen 20B, 1734 Hafslundsøy\n NO \nBooking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
+      "preview_top": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs",
+      "preview_bottom": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
     },
     {
       "page": "https://www.proffkurs.no/fse-kurs-for-instruert-personell/",
       "frame": "https://www.proffkurs.no/fse-kurs-for-instruert-personell/",
       "button_index": 2,
-      "length": 8631,
+      "length": 671,
       "has_name": true,
       "has_date": true,
       "has_address": true,
       "has_info": true,
       "has_book": true,
-      "preview_top": "Administrer samtykke\n\nVi bruker informasjonskapsler til to ting: å forstå hvordan nettsiden brukes (Google Analytics og Microsoft Clarity) og å måle om annonsene våre virker. Det hjelper oss å gjøre siden bedre. Du kan godta alle, avslå, eller velge selv. Les mer i personvernerklæringen.\n\nGodta\nAvslå\nVis preferanser\nCookie Policy\nPersonvernerklæring\nKontakt oss\nHopp til navigasjon\nHopp til innhold\nHjem\n \nKursoversikt\nAlle kurs\nKurs for bygg og anlegg\nKurs for elektro og energi\nKurs for telekom og fiber\nKurs for industri og lager\nKurs for kommune og offentlig sektor\nKurs for kontor og administrasjon\nKurs for renhold og eiendomsdrift\nKurs for helse og omsorg\n \nRessurser\nFinn riktig kurs\nArtikler\nOfte stilte spørsmål (FAQ)\nTruckførerkurs\nVerneombudskurs\nVerneombudskurs på nett\n \nOm oss\nOm oss\nKurslokaler\nKontakt oss\n \nMin side\nKursdeltaker\nInstruktør\nKursbestiller\nSE KURSUTVALGET\nHjem/Elekt",
-      "preview_bottom": "s.no\nNordre Fokserød 13B, 3241 Sandefjord\nAvdeling Østfold\n+47 97 51 93 43\npost@proffkurs.no\nØsthølen 20B, 1734 Hafslundsøy\n NO \nBooking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n12:00\n\nFSE for instruert personell (BA4)\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 900,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 12:00 - 16:00\n\nMer informasjon\n\nInngangsparti: Døren er på langsiden av bygget (oransje dør), i Alf Bjerckes vei 20. Hvis døren ikke er åpen, kan du ringe ...\n\nVis mer\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
+      "preview_top": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n12:00\n\nFSE for instruert personell (BA4)\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 900,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 12:00 - 16:00\n\nMer informasjon\n\nInngangsparti: Døren er på langsiden av bygget (oransje dør), i Alf Bjerckes vei 20. Hvis døren ikke er åpen, kan du ringe ...\n\nVis mer\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs",
+      "preview_bottom": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n12:00\n\nFSE for instruert personell (BA4)\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 900,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 12:00 - 16:00\n\nMer informasjon\n\nInngangsparti: Døren er på langsiden av bygget (oransje dør), i Alf Bjerckes vei 20. Hvis døren ikke er åpen, kan du ringe ...\n\nVis mer\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
     },
     {
       "page": "https://www.proffkurs.no/fse-kurs-for-instruert-personell/",
       "frame": "https://www.proffkurs.no/fse-kurs-for-instruert-personell/",
       "button_index": 3,
-      "length": 8481,
+      "length": 521,
       "has_name": true,
       "has_date": true,
       "has_address": true,
       "has_info": true,
       "has_book": true,
-      "preview_top": "Administrer samtykke\n\nVi bruker informasjonskapsler til to ting: å forstå hvordan nettsiden brukes (Google Analytics og Microsoft Clarity) og å måle om annonsene våre virker. Det hjelper oss å gjøre siden bedre. Du kan godta alle, avslå, eller velge selv. Les mer i personvernerklæringen.\n\nGodta\nAvslå\nVis preferanser\nCookie Policy\nPersonvernerklæring\nKontakt oss\nHopp til navigasjon\nHopp til innhold\nHjem\n \nKursoversikt\nAlle kurs\nKurs for bygg og anlegg\nKurs for elektro og energi\nKurs for telekom og fiber\nKurs for industri og lager\nKurs for kommune og offentlig sektor\nKurs for kontor og administrasjon\nKurs for renhold og eiendomsdrift\nKurs for helse og omsorg\n \nRessurser\nFinn riktig kurs\nArtikler\nOfte stilte spørsmål (FAQ)\nTruckførerkurs\nVerneombudskurs\nVerneombudskurs på nett\n \nOm oss\nOm oss\nKurslokaler\nKontakt oss\n \nMin side\nKursdeltaker\nInstruktør\nKursbestiller\nSE KURSUTVALGET\nHjem/Elekt",
-      "preview_bottom": "ørlandet\n+47 97 51 93 43\npost@proffkurs.no\nSilurveien 9, 4636 Kristiansand (i samarbeid med Marin HMS)\nAvdeling Vestfold\n+47 97 51 93 43\npost@proffkurs.no\nNordre Fokserød 13B, 3241 Sandefjord\nAvdeling Østfold\n+47 97 51 93 43\npost@proffkurs.no\nØsthølen 20B, 1734 Hafslundsøy\n NO \nBooking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
+      "preview_top": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs",
+      "preview_bottom": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
     },
     {
       "page": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
@@ -86,53 +86,53 @@
       "page": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
       "frame": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
       "button_index": 0,
-      "length": 13655,
+      "length": 521,
       "has_name": true,
       "has_date": true,
       "has_address": true,
       "has_info": true,
       "has_book": true,
-      "preview_top": "Administrer samtykke\n\nVi bruker informasjonskapsler til to ting: å forstå hvordan nettsiden brukes (Google Analytics og Microsoft Clarity) og å måle om annonsene våre virker. Det hjelper oss å gjøre siden bedre. Du kan godta alle, avslå, eller velge selv. Les mer i personvernerklæringen.\n\nGodta\nAvslå\nVis preferanser\nCookie Policy\nPersonvernerklæring\nKontakt oss\nHopp til navigasjon\nHopp til innhold\nHjem\n \nKursoversikt\nAlle kurs\nKurs for bygg og anlegg\nKurs for elektro og energi\nKurs for telekom og fiber\nKurs for industri og lager\nKurs for kommune og offentlig sektor\nKurs for kontor og administrasjon\nKurs for renhold og eiendomsdrift\nKurs for helse og omsorg\n \nRessurser\nFinn riktig kurs\nArtikler\nOfte stilte spørsmål (FAQ)\nTruckførerkurs\nVerneombudskurs\nVerneombudskurs på nett\n \nOm oss\nOm oss\nKurslokaler\nKontakt oss\n \nMin side\nKursdeltaker\nInstruktør\nKursbestiller\n \nSE KURSUTVALGET\nHjem/HMS",
-      "preview_bottom": "ørlandet\n+47 97 51 93 43\npost@proffkurs.no\nSilurveien 9, 4636 Kristiansand (i samarbeid med Marin HMS)\nAvdeling Vestfold\n+47 97 51 93 43\npost@proffkurs.no\nNordre Fokserød 13B, 3241 Sandefjord\nAvdeling Østfold\n+47 97 51 93 43\npost@proffkurs.no\nØsthølen 20B, 1734 Hafslundsøy\n NO \nBooking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
+      "preview_top": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs",
+      "preview_bottom": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
     },
     {
       "page": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
       "frame": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
       "button_index": 1,
-      "length": 13659,
+      "length": 521,
       "has_name": true,
       "has_date": true,
       "has_address": true,
       "has_info": true,
       "has_book": true,
-      "preview_top": "Administrer samtykke\n\nVi bruker informasjonskapsler til to ting: å forstå hvordan nettsiden brukes (Google Analytics og Microsoft Clarity) og å måle om annonsene våre virker. Det hjelper oss å gjøre siden bedre. Du kan godta alle, avslå, eller velge selv. Les mer i personvernerklæringen.\n\nGodta\nAvslå\nVis preferanser\nCookie Policy\nPersonvernerklæring\nKontakt oss\nHopp til navigasjon\nHopp til innhold\nHjem\n \nKursoversikt\nAlle kurs\nKurs for bygg og anlegg\nKurs for elektro og energi\nKurs for telekom og fiber\nKurs for industri og lager\nKurs for kommune og offentlig sektor\nKurs for kontor og administrasjon\nKurs for renhold og eiendomsdrift\nKurs for helse og omsorg\n \nRessurser\nFinn riktig kurs\nArtikler\nOfte stilte spørsmål (FAQ)\nTruckførerkurs\nVerneombudskurs\nVerneombudskurs på nett\n \nOm oss\nOm oss\nKurslokaler\nKontakt oss\n \nMin side\nKursdeltaker\nInstruktør\nKursbestiller\nSE KURSUTVALGET\nHjem/HMS o",
-      "preview_bottom": "ørlandet\n+47 97 51 93 43\npost@proffkurs.no\nSilurveien 9, 4636 Kristiansand (i samarbeid med Marin HMS)\nAvdeling Vestfold\n+47 97 51 93 43\npost@proffkurs.no\nNordre Fokserød 13B, 3241 Sandefjord\nAvdeling Østfold\n+47 97 51 93 43\npost@proffkurs.no\nØsthølen 20B, 1734 Hafslundsøy\n NO \nBooking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
+      "preview_top": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs",
+      "preview_bottom": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
     },
     {
       "page": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
       "frame": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
       "button_index": 2,
-      "length": 13659,
+      "length": 521,
       "has_name": true,
       "has_date": true,
       "has_address": true,
       "has_info": true,
       "has_book": true,
-      "preview_top": "Administrer samtykke\n\nVi bruker informasjonskapsler til to ting: å forstå hvordan nettsiden brukes (Google Analytics og Microsoft Clarity) og å måle om annonsene våre virker. Det hjelper oss å gjøre siden bedre. Du kan godta alle, avslå, eller velge selv. Les mer i personvernerklæringen.\n\nGodta\nAvslå\nVis preferanser\nCookie Policy\nPersonvernerklæring\nKontakt oss\nHopp til navigasjon\nHopp til innhold\nHjem\n \nKursoversikt\nAlle kurs\nKurs for bygg og anlegg\nKurs for elektro og energi\nKurs for telekom og fiber\nKurs for industri og lager\nKurs for kommune og offentlig sektor\nKurs for kontor og administrasjon\nKurs for renhold og eiendomsdrift\nKurs for helse og omsorg\n \nRessurser\nFinn riktig kurs\nArtikler\nOfte stilte spørsmål (FAQ)\nTruckførerkurs\nVerneombudskurs\nVerneombudskurs på nett\n \nOm oss\nOm oss\nKurslokaler\nKontakt oss\n \nMin side\nKursdeltaker\nInstruktør\nKursbestiller\nSE KURSUTVALGET\nHjem/HMS o",
-      "preview_bottom": "ørlandet\n+47 97 51 93 43\npost@proffkurs.no\nSilurveien 9, 4636 Kristiansand (i samarbeid med Marin HMS)\nAvdeling Vestfold\n+47 97 51 93 43\npost@proffkurs.no\nNordre Fokserød 13B, 3241 Sandefjord\nAvdeling Østfold\n+47 97 51 93 43\npost@proffkurs.no\nØsthølen 20B, 1734 Hafslundsøy\n NO \nBooking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
+      "preview_top": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs",
+      "preview_bottom": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n22\nOkt,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n22. oktober 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
     },
     {
       "page": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
       "frame": "https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/",
       "button_index": 3,
-      "length": 13655,
+      "length": 521,
       "has_name": true,
       "has_date": true,
       "has_address": true,
       "has_info": true,
       "has_book": true,
-      "preview_top": "Administrer samtykke\n\nVi bruker informasjonskapsler til to ting: å forstå hvordan nettsiden brukes (Google Analytics og Microsoft Clarity) og å måle om annonsene våre virker. Det hjelper oss å gjøre siden bedre. Du kan godta alle, avslå, eller velge selv. Les mer i personvernerklæringen.\n\nGodta\nAvslå\nVis preferanser\nCookie Policy\nPersonvernerklæring\nKontakt oss\nHopp til navigasjon\nHopp til innhold\nHjem\n \nKursoversikt\nAlle kurs\nKurs for bygg og anlegg\nKurs for elektro og energi\nKurs for telekom og fiber\nKurs for industri og lager\nKurs for kommune og offentlig sektor\nKurs for kontor og administrasjon\nKurs for renhold og eiendomsdrift\nKurs for helse og omsorg\n \nRessurser\nFinn riktig kurs\nArtikler\nOfte stilte spørsmål (FAQ)\nTruckførerkurs\nVerneombudskurs\nVerneombudskurs på nett\n \nOm oss\nOm oss\nKurslokaler\nKontakt oss\n \nMin side\nKursdeltaker\nInstruktør\nKursbestiller\nSE KURSUTVALGET\nHjem/HMS o",
-      "preview_bottom": "ørlandet\n+47 97 51 93 43\npost@proffkurs.no\nSilurveien 9, 4636 Kristiansand (i samarbeid med Marin HMS)\nAvdeling Vestfold\n+47 97 51 93 43\npost@proffkurs.no\nNordre Fokserød 13B, 3241 Sandefjord\nAvdeling Østfold\n+47 97 51 93 43\npost@proffkurs.no\nØsthølen 20B, 1734 Hafslundsøy\n NO \nBooking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
+      "preview_top": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs",
+      "preview_bottom": "Booking av event\nInfo om kurset\nBilde 1 (1 av 1)\n\n03\nDes,\n2026\n\n14:00\n\nFørstehjelpskurs for elektropersonell\n\nAlf Bjerckes vei 20, 0582 Oslo\n\nÅpent\n\nkr 1 190,00\n\nInfo om kurset\n\nTidsrom\n\n3. desember 2026 - 14:00 - 16:00\n\nKristoffer Sandal\n\nOm\n\nKristoffer er en erfaren elektriker med gode undervisningsferdigheter. Han holder kurs i FSE, Instruert personell, førstehjelp og lift – med fokus på praktiske eksempler, tydelig kommunikasjon og sikkerhet i arbeidshverdagen. Med sin bakgrunn fra ...\n\nVis mer\nLukk\nBestill kurs"
     }
   ]
 }
