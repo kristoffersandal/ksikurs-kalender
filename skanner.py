@@ -6,6 +6,7 @@ from zoneinfo import ZoneInfo
 from playwright.async_api import async_playwright
 HERE=Path(__file__).resolve().parent
 OUT=HERE/"docs/kurs.json"
+DIAG=HERE/"diagnostics/latest.json"
 NAME="Kristoffer Sandal"
 URLS=["https://www.proffkurs.no/fse-kurs-for-elektropersonell/","https://www.proffkurs.no/fse-kurs-for-instruert-personell/","https://www.proffkurs.no/produkt/forstehjelpskurs-for-elektropersonell/"]
 MONTHS={"jan":1,"januar":1,"feb":2,"februar":2,"mar":3,"mars":3,"apr":4,"april":4,"mai":5,"jun":6,"juni":6,"jul":7,"juli":7,"aug":8,"august":8,"sep":9,"sept":9,"september":9,"okt":10,"oktober":10,"nov":11,"november":11,"des":12,"desember":12}
@@ -45,7 +46,7 @@ async def main():
     assert parse(sample,URLS[0],dt.date(2026,10,1))
     assert parse(sample.replace(NAME,"Niklas Sæthre"),URLS[0],dt.date(2026,10,1)) is None
     print("Filtertest OK");return 0
- found={};opened=0
+ found={};opened=0;diagnostics=[]
  async with async_playwright() as p:
   browser=await p.chromium.launch(headless=True)
   try:
@@ -55,12 +56,14 @@ async def main():
      resp=await page.goto(url,wait_until="domcontentloaded",timeout=55000)
      if not resp or resp.status>=400:raise RuntimeError("HTTP "+str(resp.status if resp else "unknown"))
      await page.wait_for_timeout(4000)
+     diagnostics.append({"page":url,"status":resp.status,"frames":len(page.frames)})
      # Booking plugins can render in iframes.
      for frame in page.frames:
       try:
        locator=frame.get_by_text("Les mer og bestill",exact=False)
        count=min(await locator.count(),100)
        if count:print(url,"buttons",count,"frame",frame.url[:110])
+       diagnostics.append({"frame":frame.url[:220],"buttons":count})
        for j in range(count):
         try:
          await locator.nth(j).click(timeout=6500)
@@ -82,10 +85,16 @@ async def main():
          if not detail and frame != page.main_frame:detail=await page.evaluate(JS)
          if detail:
           opened+=1
+          diagnostics.append({"page":url,"frame":frame.url[:220],"button_index":j,
+           "length":len(detail),"has_name":NAME.casefold() in detail.casefold(),
+           "has_date":bool(DATERE.search(detail)),"has_address":bool(ADDRESS.search(detail)),
+           "has_info":("Info om kurset" in detail),"has_book":("Bestill kurs" in detail),
+           "preview_top":detail[:900],"preview_bottom":detail[-800:]})
           event=parse(detail,url)
           if event:found[event["id"]]=event;print("MATCH",event["dato"],event["tid"],event["navn"])
           else:
            print("NO_MATCH", "frame",frame.url[:100],"len",len(detail),"name",NAME.lower() in detail.lower(),"date",bool(DATERE.search(detail)),"header",("Info om kurset" in detail),"book",("Bestill kurs" in detail),"address",bool(ADDRESS.search(detail)),"time",bool(TIME.search(detail)),"first300",repr(detail[:300]),"last400",repr(detail[-400:]))
+         if not detail:diagnostics.append({"page":url,"frame":frame.url[:220],"button_index":j,"result":"empty_modal"})
          await page.keyboard.press("Escape")
          await page.wait_for_timeout(250)
          # If escape doesn't dismiss, use common close buttons.
@@ -96,13 +105,17 @@ async def main():
             if await b.is_visible(timeout=300):await b.click(timeout=1500);break
            except Exception:pass
         except Exception as ex:
-         print("Event error",str(ex)[:200])
+         print("Event error",str(ex)[:200]);diagnostics.append({"page":url,"button_index":j,"event_error":str(ex)[:450]})
          try:await page.keyboard.press("Escape")
          except Exception:pass
-      except Exception as ex:print("Frame error",str(ex)[:200])
-    except Exception as ex:print("Page error",url,str(ex)[:250])
+      except Exception as ex:print("Frame error",str(ex)[:200]);diagnostics.append({"page":url,"frame_error":str(ex)[:450]})
+    except Exception as ex:print("Page error",url,str(ex)[:250]);diagnostics.append({"page":url,"page_error":str(ex)[:450]})
     finally:await page.close()
   finally:await browser.close()
+ DIAG.parent.mkdir(parents=True,exist_ok=True)
+ DIAG.write_text(json.dumps({"checked_at":dt.datetime.now(ZoneInfo("Europe/Oslo")).isoformat(timespec="seconds"),
+  "opened":opened,"confirmed":len(found),"entries":diagnostics[:100]},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+ print("Wrote diagnostic report",DIAG)
  print("Scanned dialogs",opened,"confirmed events",len(found))
  if not opened:
   print("ERROR: No course dialogs read; preserving previous JSON");return 2
