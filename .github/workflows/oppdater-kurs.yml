@@ -1,5 +1,10 @@
 name: Oppdater kurskalender
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'skanner.py'
+      - '.github/workflows/oppdater-kurs.yml'
   schedule:
     - cron: '23 7 * * 1'
   workflow_dispatch:
