@@ -84,8 +84,20 @@ async def main():
       try:
        locator=frame.get_by_text("Les mer og bestill",exact=False)
        count=min(await locator.count(),100)
+       if not count and "/produkt/fse/" in url:
+        await page.wait_for_timeout(6500)
+        count=min(await locator.count(),100)
        if count:print(url,"buttons",count,"frame",frame.url[:110])
        diagnostics.append({"frame":frame.url[:220],"buttons":count})
+       if not count and "/produkt/fse/" in url:
+        debug=await frame.evaluate("""() => {
+         const body=document.body.innerText||'';
+         const buttons=[...document.querySelectorAll('button,a,[role=button]')].map(e=>(e.innerText||e.getAttribute('aria-label')||'').trim()).filter(Boolean);
+         const hits=[...body.matchAll(/(kursdato|velg dato|book|bestill|v ennligst vent|event|kursoversikt)/gi)].slice(0,16).map(m=>body.slice(Math.max(0,m.index-70),m.index+180));
+         return {size:body.length,tail:body.slice(-2400),hits,buttons:buttons.slice(0,100)}
+        }""")
+        diagnostics.append({"fse_page_debug":debug})
+        print("FSE_BOOKING_DEBUG","size",debug["size"],"tail",repr(debug["tail"][-850:]),"buttons",debug["buttons"][-30:])
        for j in range(count):
         try:
          await locator.nth(j).click(timeout=6500)
