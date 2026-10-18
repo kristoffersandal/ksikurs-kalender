@@ -64,13 +64,15 @@ async def main():
        for j in range(count):
         try:
          await locator.nth(j).click(timeout=6500)
-         await page.wait_for_timeout(650)
+         await page.wait_for_timeout(1800)
          detail=await frame.evaluate(JS)
          if not detail and frame != page.main_frame:detail=await page.evaluate(JS)
          if detail:
           opened+=1
           event=parse(detail,url)
           if event:found[event["id"]]=event;print("MATCH",event["dato"],event["tid"],event["navn"])
+          else:
+           print("NO_MATCH", "frame",frame.url[:100],"len",len(detail),"name",NAME.lower() in detail.lower(),"date",bool(DATERE.search(detail)),"first300",repr(detail[:300]),"last400",repr(detail[-400:]))
          await page.keyboard.press("Escape")
          await page.wait_for_timeout(250)
          # If escape doesn't dismiss, use common close buttons.
