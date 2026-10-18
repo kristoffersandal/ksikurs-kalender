@@ -21,7 +21,7 @@ def parse(text,url,now=None):
         text=text.rsplit("Booking av event",1)[-1]
     if len(text)>12000 or NAME.casefold() not in text.casefold():return None
     if "Info om kurset" not in text or "Bestill kurs" not in text:return None
-    lines=[re.sub(r"\\s+"," ",x).strip() for x in text.splitlines() if x.strip()]
+    lines=[re.sub(r"\s+"," ",x).strip() for x in text.splitlines() if x.strip()]
     # The compact date on the modal is often split over three lines:
     # 03 / Des, / 2026. The full date after "Tidsrom" is much more reliable.
     date_area=text.split("Tidsrom",1)[1] if "Tidsrom" in text else text
@@ -31,7 +31,7 @@ def parse(text,url,now=None):
     try:day=dt.date(int(m[3]),MONTHS[m[2].lower()],int(m[1]))
     except ValueError:return None
     if day<(now or dt.datetime.now(ZoneInfo("Europe/Oslo")).date()):return None
-    title=next((line for line in lines if re.match(r"^(FSE|Førstehjelpskurs)\\b",line,re.I)),None)
+    title=next((line for line in lines if re.match(r"^(FSE|Førstehjelpskurs)\b",line,re.I)),None)
     if not title:return None
     # The full FSE title can continue on a parenthesized second line.
     pos=lines.index(title)
@@ -41,7 +41,7 @@ def parse(text,url,now=None):
     if not clock_match:clock_match=TIME.search(" ".join(lines))
     address=ADDRESS.search(text)
     if not clock_match or not address:return None
-    if re.search(r"\\b(avlyst|fullbooket|utsolgt)\\b",text,re.I):return None
+    if re.search(r"\b(avlyst|fullbooket|utsolgt)\b",text,re.I):return None
     clock=f"{int(clock_match[1]):02d}:{clock_match[2]}"
     kind="Instruert personell / BA4" if re.search("BA4|instruert personell",title,re.I) else "Praktisk førstehjelp" if "førstehjelp" in title.lower() and "fse" not in title.lower() else "FSE lavspenning og førstehjelp"
     return {"id":day.isoformat()+"-"+clock.replace(":","")+"-"+re.sub("[^a-z0-9]","-",kind.lower()),"dato":day.isoformat(),"tid":clock,"navn":title,"adresse":address[1].strip(),"kurs":kind,"lenke":url}
